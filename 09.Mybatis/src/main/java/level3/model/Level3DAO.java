@@ -32,6 +32,6 @@ public class Level3DAO {
 	}
 	//회원정보삭제
 	public int deleteLevel3(String p_id) {
-		return 0;
+		return sql.delete("level3.deleteLevel3", p_id);
 	}
 }

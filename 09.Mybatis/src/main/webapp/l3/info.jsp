@@ -34,5 +34,6 @@
 
 </table>
 <a href="modify.l3?id=${dto.p_id }">수정하기</a>
+<a href="delete.l3?id=${dto.p_id }">삭제하기</a>
 </body>
 </html>

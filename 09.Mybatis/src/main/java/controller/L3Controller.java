@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import level3.DeleteLevel3;
 import level3.InfoCommand;
 import level3.InsertCommand;
 import level3.ListCommand;
@@ -73,6 +74,14 @@ public class L3Controller extends HttpServlet {
 			//응답화면
 			view = "info.l3?id=" + request.getParameter("p_id");
 			forward = false;
+		}
+		//선택한 회원정보 삭제처리 요청
+		else if(uri.equals("/delete.l3")) {
+			//비지니스로직
+			new DeleteLevel3().exec(request, response);
+			//응답화면
+			forward = false;
+			view = "list.l3";
 		}
 		
 		
