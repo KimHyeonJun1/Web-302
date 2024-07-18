@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core"  prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,11 +36,12 @@
 <tr><th>제조사명</th>
 	<td>등록되지 않은 제품입니다</td>
 </tr>
-<tr><th>조회일자</th>
+<tr><th>등록일자</th>
 	<td>${today }</td>
 </tr>
 </c:if>
 </table>
 <a href="search.l5">제품코드 조회</a>
+<a href="list.l5">제품코드 목록</a>
 </body>
 </html>
